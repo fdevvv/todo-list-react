@@ -1,11 +1,11 @@
 import './App.css';
-import logo from './img/freecodecamp-logo.png';
 
 function App() {
   return (
     <div className="App">
-        <div className="logo">
-            <img src={logo} alt="logo" />
+
+        <div className="todo-container">
+          <h1>Mis Tareas</h1>
         </div>
     </div>
   );

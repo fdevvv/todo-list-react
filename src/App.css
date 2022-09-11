@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    color: white;
+    background-color: #313131;
+    margin-top: 40px;
+}
+
+h1 {
+    color: #1b1b32;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos logo */
+
+.logo-contenedor {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 400px;
+    height: 40px;
+}
+
+/* estilos todo-container */
+
+.todo-container {
+    width: 600px;
+    min-height: 500px;
+    background-color: #e5d0ee;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 26px;
+}
