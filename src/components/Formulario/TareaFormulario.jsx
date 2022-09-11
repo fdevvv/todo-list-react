@@ -13,7 +13,6 @@ function TareaFormulario(props) {
 
     const manejarEnvio = e => {
         e.preventDefault();
-        e.target.reset()  //resetear valor input
         const tareaNueva = {
             id: uuidv4(),
             texto: input,
