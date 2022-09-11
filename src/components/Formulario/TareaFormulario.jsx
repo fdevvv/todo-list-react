@@ -2,6 +2,8 @@ import './TareaFormulario.css';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
+let tareas = [];
+
 function TareaFormulario(props) {
 
     const [input, setInput] = useState(' ');
@@ -13,14 +15,18 @@ function TareaFormulario(props) {
 
     const manejarEnvio = e => {
         e.preventDefault();
+        e.target.reset();
+        setInput('')
         const tareaNueva = {
             id: uuidv4(),
             texto: input,
             completada: false
         };
         props.onSubmit(tareaNueva);
+        tareas.push(tareaNueva);
+        localStorage.setItem("tareas", JSON.stringify(tareas));
     };
-   
+
 
     return (
         <form 

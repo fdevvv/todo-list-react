@@ -19,6 +19,7 @@ function ListaTareas() {
     const eliminarTarea = id => {
         const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
         setTareas(tareasActualizadas);
+        localStorage.setItem("tareas", JSON.stringify(tareas));
     };
 
     const completarTarea = id => {
